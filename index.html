@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <link rel="stylesheet" href="./css/counter.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/addeditem.css" />
+    <link rel="stylesheet" href="./css/functionality.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/functions.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Barlow:wght@100&family=Bellefair&family=Cinzel:wght@500&family=Epilogue:wght@500;700&family=Inter:wght@400;700&family=Nunito+Sans:wght@300;600;800&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,700;1,300&family=Rubik:wght@300;400;500&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+  </head>
+  <body>
+    <div  class="container">
+
+      <div><button id="add_item_btn">Add Item</button> </div>
+      <div class="popup_layer" >
+        <div id="item-generator" class="item-generator">
+          <div class="item-generator-container">
+            <!-- <div class="item-generator-section"> -->
+              <div style="padding: 50px 20px 20px 20px; position: relative;  z-index: 99999 !important;" class="Item_selector">
+                <button id="close-button"><i class=" x-icon fa fa-xmark"></i></button>
+
+            <div id="dropdown" class="select-box">
+              <div class="select-box__current" tabindex="1">
+          
+                <div class="select-box__value disabled">
+                  <input class="select-box__input placeHolder" type="radio" id="-1" value="0" name="Ben" checked="checked" />
+                  <p class="select-box__input-text choose">rice</p>
+                </div>
+                <div class="select-box__value">
+                  <input class="select-box__input" type="radio" id="0" value="1" name="Ben"/>
+                  <p class="select-box__input-text">Cream</p>
+                </div>
+                <div class="select-box__value">
+                  <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                  <p class="select-box__input-text">Cheese</p>
+                </div>
+                <div class="select-box__value">
+                  <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                  <p class="select-box__input-text">Milk</p>
+                </div>
+                <div class="select-box__value">
+                  <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+                  <p class="select-box__input-text">Honey</p>
+                </div>
+                <div class="select-box__value">
+                  <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
+                  <p class="select-box__input-text">Toast</p>
+                </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+              </div>
+              <ul class="select-box__list">
+                <li>
+                  <label class="select-box__option" for="-1" aria-hidden="aria-hidden">rice</label>
+                </li>
+                <li>
+                  <label class="select-box__option" for="0" aria-hidden="aria-hidden">Cream</label>
+                </li>
+                <li>
+                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">Cheese</label>
+                </li>
+                <li>
+                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">Milk</label>
+                </li>
+                <li>
+                  <label class="select-box__option" for="3" aria-hidden="aria-hidden">Honey</label>
+                </li>
+                <li>
+                  <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label> 
+                </li>
+              </ul>
+
+        </div>
+
+
+            <div class="price_wrapper">
+        <!-- price -->
+        <div class="price-container">
+
+        
+          <div class="number-input">
+            <div class="quantity_text">price :&nbsp; &nbsp;  </div>
+            <div class="price_counter">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+        <input id="price" class="price" min="1" name="price" value="1" type="number">
+        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        </div>
+    </div>
+
+
+    </div>
+        <!-- ./price -->
+
+        <!-- quantity -->
+              <div class="quantity-container">          
+                  <div class="number-input">
+                    <div class="quantity_text">Quantity :&nbsp; &nbsp;  </div>
+            <div class="quantity_counter">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                <input id="quantity" class="quantity quantity_input" min="1" name="quantity" value="1" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+              </div>
+            </div>
+              </div>
+              <!-- ./quantity -->
+      </div>
+
+              <!-- add -->
+              <div class="addbutton">
+                <button onclick="handleAddItemClick()" id="add-button">add</button>
+              </div>
+              <!-- ./add -->
+
+
+            </div>
+        
+            
+          <!-- </div> -->
+        </div>
+        
+      </div>
+    </div>
+
+      <div  style="position: relative;" id="addeditems" class="addeditems"></div>
+      
+      <div id="total_price"  class="total_price">
+        <div class="total_price_container">
+          <div class="total_text"> <span style="color: #8e8f9c;" >Total :&nbsp;</span> <span  class="dollar">$</span> <p id="total" class="total_price_number"></p> </div>
+          <div class="save">
+            <button id="save_items_btn">save</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="space"></div>
+      
+
+
+  </body>
+  
+</html>

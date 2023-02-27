@@ -1,0 +1,139 @@
+.addeditem{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  padding: 5px 12px;
+  margin: 0 0 10px  0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addeditem img{
+  width: 70px;
+  display: flex;
+  
+}
+
+.addeditem .item_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+.addeditem .bulk_actions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* padding: 5px 0; */
+  padding: 10px 20px;
+  /* background-color: #494F86; */
+  
+
+}
+.addeditem  .number-input {
+  border: 0;
+  display: inline-flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.addeditem .item_right_section{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.addeditem .item_left_section{
+  display: flex;
+}
+
+.plus{
+  background-color: #A1DBF5;
+}
+
+.addeditem .number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 4rem;
+}
+
+
+.addeditem .item_name{
+  color: #494F86;
+  font-size: 15px;
+  font-weight: 600;
+}
+.addeditem .item_price input{
+  color: #3E45AA;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  transform: translateY(2px);
+  width: 60px;
+}
+.addeditem .item_price input:focus{
+  border: 0;
+  outline: none;
+}
+.trash{
+  color: #3E45AA;
+  cursor: pointer;
+}
+.addeditem .number-input {
+  width: 95%;
+}
+/*  */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  /* width: 1000%; */
+  cursor: pointer;
+}
+input[type="checkbox"]:after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f111";
+  font-size: 22px;
+  color: #478bfb;
+  /* right: -16px;
+  top: 14px; */
+}
+input[type="checkbox"]:checked:after {
+  font-weight: 900;
+  content: "\f058";
+  color: #3E45AA;
+}
+.delete_button{
+  position: absolute;
+ right: 8px;
+ top: 9px; 
+}
+
+#add_item_btn{
+  color: #A1DBF5;
+  background-color: #3E45AA;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:150px auto 0 auto ;
+}
+
+
+.update_btn{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.update_btn i{
+  color: #3E45AA;
+  font-size: 17px;
+  transform: translate(-15px,-2px);
+}

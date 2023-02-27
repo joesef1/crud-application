@@ -1,0 +1,129 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: #E9E9F1;
+  background-color: #F7F7F7;
+}
+input.quantity:active {
+  border: none !important;
+}
+input.quantity:focus {
+  outline: none;
+}
+input.quantity {
+  font-size: 3px;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.item-generator-container{
+width: 90%;
+margin: 0 auto;
+margin-top: 30%;
+/* transform: translateY(45%); */
+}
+@media (min-width: 600px){
+  .item-generator-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 14%;
+    }
+}
+
+.addbutton{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 25px 0 5px 0;
+}
+.addbutton button{
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color:#A1DBF5;
+  background-color: #3E45AA;
+  border: 0;
+  border-radius: 20px;
+}
+
+.Item_selector{
+  margin:  20px 0 10px 0 ;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.select-box{
+  margin: 0 auto 10px auto ;
+  z-index: 222;
+  width: 70%;
+}
+.addeditems{
+  margin:  20px 0 0 0;
+}
+
+/* total_price */
+.total_price{
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 0 15px 0;
+  border-radius: 20px 20px 0 0;
+}
+ .dollar{
+  color:  #3E45AA;
+  font-size: 16px;
+  
+}
+.total_price_container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#save_items_btn{
+  color:#A1DBF5;
+  background-color: #3E45AA;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.total_text{
+
+  font-size: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+
+.number-input{
+  margin: 10px 0;
+}
+
+
+
+.space{
+  height: 70px;
+}
+
+#close-button{
+  cursor: pointer;
+}
